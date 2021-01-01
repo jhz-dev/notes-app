@@ -14,21 +14,15 @@
     ".eslintrc.json": "*",
     "nx.json": "*"
   },
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
-      "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
-      }
-    }
-  },
   "projects": {
     "notes": {
       "tags": []
     },
     "notes-e2e": {
       "tags": [],
-      "implicitDependencies": ["notes"]
+      "implicitDependencies": [
+        "notes"
+      ]
     }
   }
 }
